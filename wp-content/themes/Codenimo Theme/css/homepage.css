@@ -1,0 +1,194 @@
+.user-info {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+}
+.user-info .txtContent p.employeeName {
+    font-weight: 600;
+    font-size: 24px;
+}
+.user-info .txtContent p.employeeEmail {
+    font-size: 15px;
+    margin-top: 5px;
+}
+section.dashboard .titleContent {
+    max-width: 1380px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.user-info .img-nameContent img{
+    max-width: 80px;
+    height: 80px;
+    width: 100%;
+    border-radius: 100%;
+    border: 2px solid #0b192c;
+}
+section.dashboard .content {
+    display: flex;
+    gap: 25px;
+}
+section.dashboard .content .leftContent {
+    flex: 0.7;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+    padding: 10px 20px;
+}
+section.dashboard .content .rightContent {
+    flex: 1.4;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+    padding: 10px 20px;
+}
+section.dashboard .content .leftContent .profileContainer {
+    margin: 20px 0;
+}
+section.dashboard .titleContent h1 {
+    font-size: 45px;
+    margin: 30px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.calendar-container {
+    background: #d0cece;
+    max-width: 450px;
+    border-radius: 10px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+.calendar-container header {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px 10px;
+    justify-content: space-between;
+}
+
+header .calendar-navigation {
+    display: flex;
+}
+
+header .calendar-navigation span {
+    height: 30px;
+    width: 30px;
+    margin: 0 1px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 38px;
+    border-radius: 50%;
+    user-select: none;
+    color: #aeabab;
+    font-size: 15px;
+}
+
+.calendar-navigation span:last-child {
+    margin-right: -10px;
+}
+
+header .calendar-navigation span:hover {
+    background: #f2f2f2;
+}
+
+header .calendar-current-date {
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.calendar-body {
+    padding: 15px;
+}
+
+.calendar-body ul {
+    list-style: none;
+    flex-wrap: wrap;
+    display: flex;
+    text-align: center;
+}
+
+.calendar-body .calendar-dates {
+    margin-bottom: 20px;
+}
+
+.calendar-body li {
+    width: calc(100% / 7);
+    font-size: 1.07rem;
+    color: black;
+}
+
+.calendar-body .calendar-weekdays li {
+    cursor: default;
+    font-weight: 500;
+}
+
+.calendar-body .calendar-dates li {
+    margin-top: 20px;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.calendar-dates li.inactive {
+    color:#808080;
+}
+
+.calendar-dates li.active {
+    color: #fff;
+}
+
+.calendar-dates li::before {
+    position: absolute;
+    content: "";
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.calendar-dates li.active::before {
+    background: #6332c5;
+}
+
+.calendar-dates li:not(.active):hover::before {
+    background: #e4e1e1;
+}
+
+
+button#create-attendance {
+    background: #0b192c;
+    border: none;
+    font-weight: 600;
+    color: white;
+    height: 120px;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 8px;
+    font-size: 25px;
+    transition: 0.3s;
+}
+.attendanceContainer {
+    padding: 23px 0 15px;
+}
+button#create-attendance:hover {
+    background: white;
+    border: 2px solid #0b192c;
+    color: #0b192c;
+}

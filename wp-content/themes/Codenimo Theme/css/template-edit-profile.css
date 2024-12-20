@@ -1,0 +1,128 @@
+.profile-edit-form {
+    max-width: 900px;
+    width: 100%;
+    margin: 70px auto;
+    box-shadow: 5px 5px 20px;
+    padding: 40px 30px;
+    border-radius: 8px;
+}
+section.editTemplateSection .profile-edit-form .txtImgContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+section.editTemplateSection .profile-edit-form .txtImgContent h2 {
+    font-size: 32px;
+}
+.input-2colContent {
+    display: flex;
+    justify-content: space-between;
+}
+.input-container, .input-container input {
+    width: 100%;
+    margin-bottom: 10px;
+}
+.profile-edit-form form {
+    position: relative;
+    padding-top: 70px;
+}
+.input-container.profilepictureInput input[type="file"] {
+    cursor: pointer;
+    padding-left: 0;
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+}
+.input-container label {
+    color: black;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+}
+.input-container input {
+    font-size: 15px;
+    padding: 10px;
+}
+.input-2colContent {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+.profile-edit-form input[type="submit"] {
+    background: #2271b1;
+    color: white;
+    border: 0;
+    width: 100%;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    min-height: 40px;
+    cursor: pointer;
+    transition: 0.3s
+}
+.profile-edit-form input[type="submit"]:hover {
+    background: #135e96;
+}
+.input-container.profilepictureInput {
+    position: absolute;
+    top: -154px;
+    right: 0;
+    left: auto;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 0;
+    background: url(/Codenimo-login/wp-content/uploads/2024/10/1057730-512.png);
+    opacity: 0;
+    background-size: contain;
+}
+.input-container.profilepictureInput:hover{
+   
+    opacity: 0.5;
+}
+.input-container.field-error input {
+    border: 2px solid red;
+}
+.input-container.field-error p {
+    color: red;
+    font-weight: 600;
+    font-size: 11px;
+}
+.input-container.field-error.filled input {
+    border: 1px solid grey;
+}
+.input-container.field-error.filled p {
+    display: none;
+}
+a.backtohomepage:before {
+    content: '\f341';
+    font-family: 'dashicons';
+    text-decoration: unset;
+}
+a.backtohomepage {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 15px;
+    color: #0b192c;
+    font-weight: 500;
+    margin-top: 30px;
+}
+.success-message p {
+    color: green;
+    text-align: center;
+    margin-top: 20px;
+}
+@media(max-width: 640px){
+    section.editTemplateSection .profile-edit-form .txtImgContent h2 {
+        font-size: 27px;
+    }
+    .current-picture img {
+        width: 100px;
+        height: 100px;
+    }
+    .input-container.profilepictureInput {
+        width: 100px;
+        height: 100px;
+        top: -104px;
+    }
+}
